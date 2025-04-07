@@ -1,0 +1,58 @@
+<html>
+<head>
+    <title>Practical 3</title>
+    <style>
+        .external-style {
+            background-color: #e9e9e9;
+            padding: 20px;
+            border-radius: 5px;
+            border: 1px dashed #999;
+            margin-bottom: 15px;
+        }
+        .external-style h2 {
+            color: purple;
+        }
+        
+        .internal-style {
+            color: blue;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            border-radius: 5px;
+            border: 1px dashed #ccc;
+            margin-bottom: 15px;
+        }
+        
+        h2 {
+            text-decoration: underline;
+        }
+        
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: #f92c0c3f; padding: 20px; border-radius: 5px; border: 1px dashed #000000c8; margin-bottom: 10px;">
+        <h2 style="color: #ff0e5e; font-family: 'Arial'; text-align:left;">
+            This div uses inline CSS
+        </h2>
+        <p style="font-weight: bold; color: #2196f3;">
+            All styling here is applied directly using the style attribute.
+        </p>
+    </div>
+    
+    <div class="internal-style">
+        <h2>This div uses internal CSS</h2>
+        <p>The styling for this section is defined in the &lt;style&gt; tag in the head.</p>
+    </div>
+    
+    <div class="external-style">
+        <h2>This div uses "external" CSS</h2>
+        <p>The styling for this section comes from the simulated external CSS block.</p>
+    </div>
+    <footer>&copy; Roshan Lanjewar</footer>
+</body>
+</html>

@@ -1,80 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Styles Demonstration</title>
-    
-    <!-- Internal CSS -->
+    <title>Practical 3</title>
     <style>
-        /* External CSS styles (simulated) */
-        h1 {
-            color: Red;
-            font-size: 24px;
-            font-weight: bold;
+        .external-style {
+            background-color: #e9e9e9;
+            padding: 20px;
+            border-radius: 5px;
+            border: 1px dashed #999;
+            margin-bottom: 15px;
+        }
+        .external-style h2 {
+            color: purple;
+        }
+        
+        .internal-style {
+            color: blue;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            border-radius: 5px;
+            border: 1px dashed #ccc;
+            margin-bottom: 15px;
         }
         
         h2 {
-            color: blue;
-            font-size: 24px;
-            font-weight: bold;
+            text-decoration: underline;
         }
         
-        p {
-            color: green;
-            font-size: 16px;
-        }
-        
-        /* Additional internal styles */
-        .highlight {
-            background-color: yellow;
-            font-size: 24px;
-            font-weight: bold;
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
         }
     </style>
-    
-    <!-- Uncomment the following line to link to an external CSS file instead -->
-    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
 </head>
 <body>
-    <h1>Welcome to my website! This platform is designed to empower and connect students as they navigate their academic journey. Here, you'll find a wealth of resources, including study tips, campus events, and opportunities for personal and professional growth. Whether you're looking for advice on managing your time, exploring extracurricular activities, or seeking support services, our community is here to help you thrive. Join us in making the most of your college experience!</h1>
+    <div style="background-color: #f92c0c3f; padding: 20px; border-radius: 5px; border: 1px dashed #000000c8; margin-bottom: 10px;">
+        <h2 style="color: #ff0e5e; font-family: 'Arial'; text-align:left;">
+            This div uses inline CSS
+        </h2>
+        <p style="font-weight: bold; color: #2196f3;">
+            All styling here is applied directly using the style attribute.
+        </p>
+    </div>
     
-    <p>This is a paragraph styled with internal CSS.</p>
+    <div class="internal-style">
+        <h2>This div uses internal CSS</h2>
+        <p>The styling for this section is defined in the &lt;style&gt; tag in the head.</p>
+    </div>
     
-    <p class="highlight">This paragraph has a yellow background and bold text, styled with internal CSS.</p>
-    
-<body>
-    <header>
-        <h2><i>Computer Architecture & Organization it is a fundamental area of computer science that focuses on the design and structure of computer systems
-        <br>Mrs. Ashwini Deokate mam is our subject incharge</i></h2>
-    </header>
-    <main>
-        <p>This is a simple example of using external CSS.</p>
-    </main>
-    <footer>
-        <p>&copy; 2025 My Website: Roshan 59</p>
-    </footer>
+    <div class="external-style">
+        <h2>This div uses "external" CSS</h2>
+        <p>The styling for this section comes from the simulated external CSS block.</p>
+    </div>
+    <footer>&copy; Roshan Lanjewar</footer>
 </body>
-</html>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>CSS Styles Demonstration</title>
-        <style>
-            body {background-color: powderblue;}
-            h1   {color: blue;}
-            p    {color: red;}
-        </style>
-    </head>
-    <body>
-        
-        <h1>This line is an example of the text color to blue in External CSS</h1>
-        <p>This line is an example of the text color to blue in External CSS.</p>
-        <footer>
-            <p>&copy; 2025 My Website: Roshan 59</p>
-        </footer>
-    </body>
 </html>
